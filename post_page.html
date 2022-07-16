@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;600;900&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    header {
+        background: #fff;
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* justify-content: space-evenly; */
+        /* padding: 1em; */
+        padding-block: 1em;
+        padding-inline: 5em;
+    }
+    
+    .nav {
+        display: flex;
+    }
+    
+    nav .left {
+        display: flex;
+        align-items: center;
+        gap: 3em;
+    }
+    
+    nav .logo {
+        display: flex;
+        gap: 1em;
+    }
+    
+    nav .logo img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    nav .logo a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+        font-size: xx-large;
+    }
+    
+    nav .logo a span {
+        color: #0B5ED7;
+    }
+    
+    nav .right {
+        display: flex;
+        gap: 2em;
+        align-items: center;
+    }
+    
+    nav .menu img {
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+    }
+    
+    .profile {
+        height: 20px;
+        width: 20px;
+    }
+    
+    main .search {
+        display: flex;
+        margin-top: 20px;
+    }
+    
+    main input {
+        width: 300px;
+        padding: 0.7em;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-style: none;
+        border: 2px #F4F4F4 solid;
+    }
+    
+    main .search button {
+        padding: 0.5em;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-style: none;
+        cursor: pointer;
+        background: #4380A0;
+        color: white;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container">
+                <div class="left">
+                    <div class="logo">
+                        <img src="./Asset/logo.png" alt="">
+                        <a href="#">study<span>room</span></a>
+                    </div>
+
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="menu collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <img src="./Asset/profile.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+    <main>
+        <div class="search d-flex justify-content-center mb-5">
+            <input type="text" placeholder="Search for topics...">
+            <button>Search</button>
+        </div>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./Asset/card image.png" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+
+                                        <h5 class="card-title">Information System</h5>
+                                        <p class="card-text">Information system (IS) is the study of complementary networks of hardware and software that people and organizations use to collect, filter, process, create, and distribute data. </p>
+                                        <div class="user d-flex align-items-center gap-2">
+                                            <img src="./Asset/profile.png" alt="" class="profile"><span class="lead">Mohammed Ahmed</span>
+                                        </div>
+
+                                        <p class="card-text"><small class="text-muted">Uploaded 3 mins ago</small></p>
+                                        <button class="btn btn-success btn-sm">view</button> <button class="btn btn-primary btn-sm">Download</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card-container d-flex justify-content-center ">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./Asset/card image.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+
+                                            <h5 class="card-title">Information System</h5>
+                                            <p class="card-text">Information system (IS) is the study of complementary networks of hardware and software that people and organizations use to collect, filter, process, create, and distribute data. </p>
+                                            <div class="user d-flex align-items-center gap-2">
+                                                <img src="./Asset/profile.png" alt="" class="profile"><span class="lead">Mohammed Ahmed</span>
+                                            </div>
+
+                                            <p class="card-text"><small class="text-muted">Uploaded 3 mins ago</small></p>
+                                            <button class="btn btn-success btn-sm">view</button> <button class="btn btn-primary btn-sm">Download</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card-container d-flex justify-content-center ">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./Asset/card image.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+
+                                            <h5 class="card-title">Information System</h5>
+                                            <p class="card-text">Information system (IS) is the study of complementary networks of hardware and software that people and organizations use to collect, filter, process, create, and distribute data. </p>
+                                            <div class="user d-flex align-items-center gap-2">
+                                                <img src="./Asset/profile.png" alt="" class="profile"><span class="lead">Mohammed Ahmed</span>
+                                            </div>
+
+                                            <p class="card-text"><small class="text-muted">Uploaded 3 mins ago</small></p>
+                                            <button class="btn btn-success btn-sm">view</button> <button class="btn btn-primary btn-sm">Download</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
